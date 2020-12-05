@@ -1,8 +1,5 @@
-import re
-
-
 def expr(p):
-    return "{}1{}2{}3{}4{}5{}6{}7{}8{}9".format(*p)
+    return "1{}2{}3{}4{}5{}6{}7{}8{}9".format(*p)
 
 
 def list_to_string(s):
@@ -48,14 +45,12 @@ def bruteforce(data, length=None):
         temporary_var = []
 
 
-list_ops = [item for item in bruteforce("+- ", length=9)]
+list_ops = [item for item in bruteforce("+- ", length=8)]
 all_possible_maths = [expr(p) for p in list_ops]
 for math in all_possible_maths:
     try:
         my_math = list_to_string(math).replace(" ", '')
-        if re.search("^[+]", my_math):
-            pass
-        elif eval(my_math) == 100:
+        if eval(my_math) == 100:
             print(f"Found: {my_math} --> {eval(my_math)}")
 
     except NameError:
