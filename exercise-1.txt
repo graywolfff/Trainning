@@ -1,0 +1,6 @@
+1. cho 1 dãy số 123456789
+chèn vào giữa các số 1 phép toán (+, - or none) để ra kết quả 100
+yêu cầu: 
+- không dùng package itertools
+- không dùng 9 vòng for
+
