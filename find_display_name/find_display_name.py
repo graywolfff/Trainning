@@ -1,10 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
 
-# url = 'http://45.79.43.178/source_carts/wordpress/wp-login.php'
-url = 'http://localhost:8080/wp-login.php'
-username = 'dementor'
-password = 'sannix@2019'
+url = 'http://45.79.43.178/source_carts/wordpress/wp-login.php'
+# url = 'http://localhost:8080/wp-login.php'
+username = 'admin'
+password = '123456aA'
 
 with requests.Session() as s:
     params = {

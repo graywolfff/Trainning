@@ -1,8 +1,8 @@
 from selenium import webdriver
 
-url = 'http://localhost:8080/wp-login.php'
-USERNAME = "dementor"
-PASSWORD = "sannix@2019"
+url = 'http://45.79.43.178/source_carts/wordpress/wp-admin'
+USERNAME = "admin"
+PASSWORD = "123456aA"
 
 try:
     driver = webdriver.Chrome()
