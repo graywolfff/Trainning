@@ -1,9 +1,10 @@
-# docker-lamp
+# PHP 1 - exerises 
 
 Docker example with Apache, MySql 8.0, PhpMyAdmin and Php
 
-- You can use MariaDB 10.1 if you checkout to the tag `mariadb-10.1` - contribution made by [luca-vercelli](https://github.com/luca-vercelli)
-- You can use MySql 5.7 if you checkout to the tag `mysql5.7`
+- Lưu ý version docker nên là 2.5.0 (không chạy đc trên version 3).
+- default view page localhost:8001
+- admin page localhost:8001/admin/show
 
 I use docker-compose as an orchestrator. To run these containers:
 
@@ -16,6 +17,6 @@ Open web browser to look at a simple php example at [http://localhost:8001](http
 
 Run mysql client:
 
-- `docker-compose exec db mysql -u root -p` 
+- `docker-compose exec db mysql -u root -p`
 
 Enjoy !
